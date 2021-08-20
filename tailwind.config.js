@@ -13,6 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // O puedo usar colors.
         'primary-light': '#F7F8FC',
         'secondary-light': '#FFFFFF',
         'ternary-light': '#f6f7f8',
@@ -21,6 +22,11 @@ module.exports = {
         'secondary-dark': '#102D44',
         'ternary-dark': '#1E3851',
       },
+      // Fuentes -->
+      // fontFamily: {
+      //   sans: ['Graphik', 'sans-serif'],
+      //   serif: ['Merriweather', 'serif'],
+      // },
       container: {
         padding: {
           DEFAULT: '1rem',
@@ -35,7 +41,9 @@ module.exports = {
   variants: {
     extend: { opacity: ['disabled'] },
   },
-  // Por si quiero usar Forms https://github.com/tailwindlabs/tailwindcss-forms
-  // eslint-disable-next-line global-require
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [
+    // Por si quiero usar Forms https://github.com/tailwindlabs/tailwindcss-forms
+    // eslint-disable-next-line global-require
+    require('@tailwindcss/forms'),
+  ],
 };
