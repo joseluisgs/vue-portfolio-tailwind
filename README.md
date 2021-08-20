@@ -1,9 +1,9 @@
 # Vue-Portfolio
-Sencilla aplicación en Vue.js 3 para realizar un portfolio usando WindiCSS/Tailwind.
+Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
 
 [![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178c6)](https://www.typescriptlang.org/)
-[![WindiCSS](https://img.shields.io/badge/Windi%20CSS-Ready-48b0f1)](https://tailwindcss.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-Ready-48b0f1)](https://tailwindcss.com/)
 [![Code Style](https://img.shields.io/badge/JS%20Style-AirBnB-ff69b4)](https://airbnb.io/javascript)
 [![Licence](https://img.shields.io/github/license/joseluisgs/photo-gallery-ionic)](./LICENSE)
 ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-poerfolio)
@@ -26,10 +26,8 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando WindiCSS/Tail
       - [Agradecimientos](#agradecimientos)
 
 ## Sobre el proyecto
-El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando WindiCSS/Tailwind y con ello experimentar con esta librería CSS que es muy similar a Tailwind pero con algunas mejoras que me gustan.
+El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando Tailwind CSS e Iconify
 A lo largo del desarrollo maquetaremos nuestro portfolio, sus secciones y componentes. 
-
-Iré ampliando este Readme según vaya realizando los pasos.
 
 
 ## Despliegue
