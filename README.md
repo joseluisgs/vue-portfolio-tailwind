@@ -3,10 +3,10 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
 
 [![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178c6)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-Ready-48b0f1)](https://tailwindcss.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-Ready-06b6d4)](https://tailwindcss.com/)
 [![Code Style](https://img.shields.io/badge/JS%20Style-AirBnB-ff69b4)](https://airbnb.io/javascript)
 [![Licence](https://img.shields.io/github/license/joseluisgs/photo-gallery-ionic)](./LICENSE)
-![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-poerfolio)
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-portfolio)
 
 
 ![Portada](https://cms.croit.io/uploads/content/developer.svg)
