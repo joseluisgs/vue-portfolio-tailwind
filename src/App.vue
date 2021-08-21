@@ -4,10 +4,11 @@
     <Header></Header>
     <!-- Añadimos una transicion
      https://vuejs.org/v2/guide/transitions.html -->
-    <transition name="fade" mode="out-in">
-      <!-- Render Active Component Contents Start -->
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
     <!-- Footer -->
     <Footer></Footer>
   </div>
@@ -16,12 +17,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Footer from './components/shared/Footer.vue';
+import Header from './components/shared/Header.vue';
 
 export default defineComponent({
   name: 'App',
 
   components: {
     Footer,
+    Header,
   },
 });
 </script>
