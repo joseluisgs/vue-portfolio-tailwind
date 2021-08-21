@@ -12,6 +12,9 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
 ![Portada](https://cms.croit.io/uploads/content/developer.svg)
 - [Vue-Portfolio](#vue-portfolio)
   - [Sobre el proyecto](#sobre-el-proyecto)
+    - [Tailwind CSS](#tailwind-css)
+    - [Tema oscuro](#tema-oscuro)
+    - [Iconify](#iconify)
   - [Despliegue](#despliegue)
   - [Project setup](#project-setup)
     - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
@@ -29,6 +32,20 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
 El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando Tailwind CSS e Iconify
 A lo largo del desarrollo maquetaremos nuestro portfolio, sus secciones y componentes. 
 
+### Tailwind CSS
+[Tailwind CSS](https://tailwindcss.com/) es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código HTML y unos flujos de desarrollo que permiten optimizar mucho el peso del código CSS.
+
+![Portada](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png)
+
+### Tema oscuro
+Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](https://tailwindcss.com/docs/dark-mode).
+
+![Portada](https://i.ytimg.com/vi/o4Prej0wIZA/maxresdefault.jpg)
+
+### Iconify
+[Iconify](https://iconify.design/) nos ofrece poder usar iconos en nuestra aplicación de muchas fuentes disponibles, lo que nos ahorra cargar distintas fuentes de iconos y bajo demanda, es decir, no necesitamos cargar el pack completo si no solo se cargarán los iconos que necesitamos.
+
+![Portada](https://cdn.freebiesbug.com/wp-content/uploads/2016/12/iconify-free-icons-2.png)
 
 ## Despliegue
 Este proyecto esta desplegado en XXX en XXXX (Por desplegar).
