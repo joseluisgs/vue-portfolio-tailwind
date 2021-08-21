@@ -51,15 +51,15 @@ export default defineComponent({
 
 <style scoped>
 .footer__social__link {
-  @apply text-gray-400
-            hover:text-indigo-500
-            dark:hover:text-indigo-400
-            cursor-pointer
-            rounded-lg
-            bg-gray-50
-            dark:bg-ternary-dark
-            hover:bg-gray-100
-            shadow-sm
-            p-4;
+  @apply  text-gray-400
+          hover:text-indigo-500
+          dark:hover:text-indigo-400
+          cursor-pointer
+          rounded-lg
+          bg-gray-50
+          dark:bg-ternary-dark
+          hover:bg-gray-100
+          shadow-sm
+          p-4;
 }
 </style>
