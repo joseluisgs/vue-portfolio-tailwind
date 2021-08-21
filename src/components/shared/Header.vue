@@ -91,11 +91,11 @@
           </button>
         </div>
         <!-- Boton de cambio de tema -->
-        <!-- <div
-          class="px-3 py-2 ml-8 shadow-sm cursor-pointer bg-primary-light dark:bg-ternary-dark rounded-xl"
+        <div
+          class="px-3 py-3.5 ml-5 font-medium shadow-sm cursor-pointer text-md bg-primary-light dark:bg-ternary-dark rounded-xl"
         >
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-        </div> -->
+          <ThemeSwitcher :theme="theme" @theme-changed="updateTheme" />
+        </div>
       </div>
     </div>
 
@@ -105,19 +105,36 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+/* eslint-disable no-use-before-define */
+
+import { defineComponent, ref, onBeforeMount } from 'vue';
+import ThemeSwitcher from '@/components/utils/ThemeSwitcher.vue';
 // import { Icon } from '@iconify/vue';
 
 export default defineComponent({
   name: 'Header',
 
   components: {
+    ThemeSwitcher,
     // Icon,
   },
+
   setup() {
     const isOpen = ref(false);
     const theme = ref('');
     const modal = ref(false);
+
+    onBeforeMount(() => {
+      // TODO Hacer Con Store y detectar el cambio de tema
+      // Existe ya un tema
+      const cachedTheme = localStorage.theme ? localStorage.theme : false;
+      // tenemos un tema en el sistema operativo o explorador
+      const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (cachedTheme) updateTheme(cachedTheme);
+      else if (userPrefersDark) updateTheme('dark');
+      else updateTheme('light');
+      console.log('BeforeMount Theme', theme.value);
+    });
 
     const showModal = () => {
       if (modal.value) {
@@ -129,14 +146,30 @@ export default defineComponent({
       }
     };
 
+    // TODO Hacer Con Store y detectar el cambio de tema
+    const updateTheme = (newTheme: string) => {
+      theme.value = newTheme;
+      console.log(`theme changed to: ${newTheme}`);
+      localStorage.setItem('theme', newTheme);
+      if (theme.value === 'light') {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      document.querySelector('html')!.classList.remove('dark');
+      } else {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      document.querySelector('html')!.classList.add('dark');
+      }
+    };
+
     return {
       isOpen,
       theme,
       modal,
       showModal,
+      updateTheme,
     };
   },
 });
+
 </script>
 
 <style scoped>
@@ -209,3 +242,7 @@ export default defineComponent({
   opacity: 0;
 }
 </style>
+
+function changeTheme(value: string) {
+  throw new Error('Function not implemented.');
+}
