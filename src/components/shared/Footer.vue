@@ -7,24 +7,16 @@
         Suígueme
       </p>
       <ul class="flex gap-4 sm:gap-8">
-        <a
-          href="https://github.com/joseluisgs"
-          target="__blank"
-          class="footer-link"
-        >
+        <a href="https://github.com/joseluisgs" target="__blank" class="footer__social__link">
           <Icon icon="lucide:github" class="w-6 h-6 sm:w-8 sm:h-8" />
         </a>
-        <a
-          href="https://twitter.com/joseluisgonsan"
-          target="__blank"
-          class="footer-link"
-        >
+        <a href="https://twitter.com/joseluisgonsan" target="__blank" class="footer__social__link">
           <Icon icon="lucide:twitter" class="w-6 h-6 sm:w-8 sm:h-8" />
         </a>
         <a
           href="https://www.linkedin.com/in/joseluisgonsan/"
           target="__blank"
-          class="footer-link"
+          class="footer__social__link"
         >
           <Icon icon="lucide:linkedin" class="w-6 h-6 sm:w-8 sm:h-8" />
         </a>
@@ -58,7 +50,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.footer-link {
+.footer__social__link {
   @apply text-gray-400
             hover:text-indigo-500
             dark:hover:text-indigo-400
