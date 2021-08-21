@@ -2,8 +2,12 @@
   <div>
     <!-- Header -->
     <Header></Header>
-    <!-- Render Active Component Contents Start -->
-    <router-view />
+    <!-- Añadimos una transicion
+     https://vuejs.org/v2/guide/transitions.html -->
+    <transition name="fade" mode="out-in">
+      <!-- Render Active Component Contents Start -->
+      <router-view />
+    </transition>
     <!-- Footer -->
     <Footer></Footer>
   </div>
@@ -30,4 +34,14 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
 } */
+/* Programamos las transiciones
+https://vuejs.org/v2/guide/transitions.html */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
