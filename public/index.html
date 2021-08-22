@@ -7,7 +7,8 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.png">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <!-- Cargamos las clases con los fondos de body para que toda la página cargue el fondo común claro o oscuro -->
+  <body id="app-theme" class="bg-secondary-light dark:bg-primary-dark">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
