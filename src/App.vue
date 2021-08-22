@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <!-- Header -->
     <Header></Header>
     <!-- Añadimos una transicion

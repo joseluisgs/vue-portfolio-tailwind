@@ -68,7 +68,7 @@
       >
         <router-link :to="{ name: 'Home' }" class="nav__item"> Proyectos </router-link>
         <router-link :to="{ name: 'About' }" class="nav__item"> Conóceme </router-link>
-        <router-link :to="{ name: 'Home' }" class="nav__item"> Contacto </router-link>
+        <router-link :to="{ name: 'Contact' }" class="nav__item"> Contacto </router-link>
       </div>
       <!-- Botón de contacto -->
       <div class="flex-col items-center justify-between hidden sm:flex md:flex-row">
