@@ -15,6 +15,7 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
     - [Tailwind CSS](#tailwind-css)
     - [Tema oscuro](#tema-oscuro)
     - [Iconify](#iconify)
+    - [Metatag y SEO](#metatag-y-seo)
   - [Despliegue](#despliegue)
   - [Project setup](#project-setup)
     - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
@@ -44,6 +45,9 @@ Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](h
 
 ### Iconify
 [Iconify](https://iconify.design/) nos ofrece poder usar iconos en nuestra aplicación de muchas fuentes disponibles, lo que nos ahorra cargar distintas fuentes de iconos y bajo demanda, es decir, no necesitamos cargar el pack completo si no solo se cargarán los iconos que necesitamos.
+
+### Metatag y SEO
+Se ha añadido en el enrutador funciones para poder inyectar a las vistas los meta tag de TMl necesarios y con ellos mejorar el SEO.
 
 ![Portada](https://cdn.freebiesbug.com/wp-content/uploads/2016/12/iconify-free-icons-2.png)
 
