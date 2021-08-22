@@ -22,11 +22,11 @@ module.exports = {
         'secondary-dark': '#102D44',
         'ternary-dark': '#1E3851',
       },
-      // Fuentes -->
-      // fontFamily: {
-      //   sans: ['Graphik', 'sans-serif'],
-      //   serif: ['Merriweather', 'serif'],
-      // },
+      // Fuentes 
+      fontFamily: {
+        sans: ['Avenir', 'Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
       container: {
         padding: {
           DEFAULT: '1rem',
