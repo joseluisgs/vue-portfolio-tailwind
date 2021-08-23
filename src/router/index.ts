@@ -53,6 +53,22 @@ const routes: Array<RouteRecordRaw> = [
       title: 'JoseLuisGS - Contact',
     },
   },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: () => import('@/views/Projects.vue'),
+    meta: {
+      title: 'JoseLuisGS - Projects',
+    },
+  },
+  {
+    path: '/projects/single-project',
+    name: 'SingleProject',
+    component: () => import('@/views/SingleProject.vue'),
+    meta: {
+      title: 'JoseLuisGS - Single Project',
+    },
+  },
 ];
 
 const router = createRouter({

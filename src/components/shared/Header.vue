@@ -66,7 +66,7 @@
         :class="isOpen ? 'block' : 'hidden'"
         class="items-center justify-center mt-5 ml-3 sm:ml-4 sm:mt-3 sm:flex"
       >
-        <router-link :to="{ name: 'Home' }" class="nav__item"> Proyectos </router-link>
+        <router-link :to="{ name: 'Projects' }" class="nav__item"> Proyectos </router-link>
         <router-link :to="{ name: 'About' }" class="nav__item"> Conóceme </router-link>
         <router-link :to="{ name: 'Contact' }" class="nav__item"> Contacto </router-link>
       </div>
