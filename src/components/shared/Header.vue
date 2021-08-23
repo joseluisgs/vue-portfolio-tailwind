@@ -148,7 +148,7 @@ export default defineComponent({
     const modal = ref(false);
 
     onBeforeMount(() => {
-      // TODO Hacer Con Store y detectar el cambio de tema
+      // TODO: Hacer Con Store y detectar el cambio de tema
       // Existe ya un tema
       const cachedTheme = localStorage.theme ? localStorage.theme : false;
       // tenemos un tema en el sistema operativo o explorador
@@ -173,7 +173,7 @@ export default defineComponent({
       }
     };
 
-    // TODO Hacer Con Store y detectar el cambio de tema
+    // TODO: Hacer Con Store y detectar el cambio de tema
     const updateTheme = (newTheme: string) => {
       theme.value = newTheme;
       console.log(`theme changed to: ${newTheme}`);
