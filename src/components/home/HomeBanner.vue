@@ -3,12 +3,12 @@
   <section class="flex flex-col items-center mt-12 sm:justify-between sm:flex-row sm:mt-2">
     <div class="w-full text-left sm:w-1/3">
       <h1
-        class="text-3xl font-semibold text-center  sm:text-5xl sm:text-left text-ternary-dark dark:text-primary-light"
+        class="text-3xl font-semibold text-center sm:text-5xl sm:text-left text-ternary-dark dark:text-primary-light"
       >
-        Hola, soy JoséLuisGS
+        Hola, soy JoseLuisGS
       </h1>
       <p
-        class="mt-4 font-semibold leading-none text-center text-gray-400  text-2xml sm:text-4xl sm:text-left"
+        class="mt-4 font-semibold leading-none text-center text-gray-400 text-2xml sm:text-4xl sm:text-left"
       >
         Profesor, PhD. Software Development & Formador tecnológico.
       </p>

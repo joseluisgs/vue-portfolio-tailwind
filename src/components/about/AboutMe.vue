@@ -5,10 +5,11 @@
     </div>
     <div class="w-full text-left sm:w-3/4">
       <p class="about__parrafo">
-        Mi nombre es <a href="https://joseluisgs.github.io/" target="_blank">Jose Luis García Sánchez</a>. Soy Dr.
-        en Informática especializado en desarrollo de software y sistemas interactivos 👨‍🎓 y Profesor
-        de Secundaria en Formación Profesional de grado superior de DAM/DAW/ASIR 💻. Además, soy
-        GitHub Campus Advisor y embajador de GitKraken.
+        Mi nombre es
+        <a href="https://joseluisgs.github.io/" target="_blank">Jose Luis González Sánchez</a>. Soy
+        Dr. en Informática especializado en desarrollo de software y sistemas interactivos 👨‍🎓 y
+        Profesor de Secundaria en Formación Profesional de grado superior de DAM/DAW/ASIR 💻.
+        Además, soy GitHub Campus Advisor y embajador de GitKraken.
       </p>
       <p class="about__parrafo">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores
