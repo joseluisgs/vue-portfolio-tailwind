@@ -1,5 +1,5 @@
 # Vue-Portfolio
-Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
+Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS, Iconify. Para para ello se ha usado un tema dinámico oscuro, y se ha trabajado inyectando los Metatags en cada ruta para mejorar el SEO.
 
 [![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178c6)](https://www.typescriptlang.org/)
@@ -30,11 +30,15 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS.
       - [Agradecimientos](#agradecimientos)
 
 ## Sobre el proyecto
-El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando Tailwind CSS e Iconify
+El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando Tailwind CSS e Iconify.
 A lo largo del desarrollo maquetaremos nuestro portfolio, sus secciones y componentes. 
+Se ha usado un tema dinámico claro y oscuro, sin la necesidad de recargar la página.
+Se ha implementado inyección dinámica de Metatags y Título de las páginas de HTML generadas en cada ruta con el objetivo de mejorar el SEO de las mismas.
+Se han creado algunos componentes como los modales, la barra de navegación, footer orientados a adaptarse en cualquier dispositivo.
 
 ### Tailwind CSS
 [Tailwind CSS](https://tailwindcss.com/) es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código HTML y unos flujos de desarrollo que permiten optimizar mucho el peso del código CSS.
+Se ha configurado el tema para adaptarlo a las necesidades de nuestro proyecto, ya sea en colores, tipografía, resoluciones o espaciado.
 
 ![Portada](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png)
 
