@@ -43,7 +43,7 @@ Se ha configurado el tema para adaptarlo a las necesidades de nuestro proyecto, 
 ![Portada](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png)
 
 ### Tema oscuro
-Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](https://tailwindcss.com/docs/dark-mode).
+Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](https://tailwindcss.com/docs/dark-mode). Además detecta automáticamente la configuración por defecto de explorador o sistema operativo para cargar el tema según corresponda.
 
 ![Portada](https://i.ytimg.com/vi/o4Prej0wIZA/maxresdefault.jpg)
 
