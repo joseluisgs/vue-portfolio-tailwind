@@ -1,17 +1,23 @@
 # Vue-Portfolio
-Sencilla aplicación en Vue.js 3 para realizar un portfolio usando WindiCSS/Tailwind.
+Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS, Iconify. Para para ello se ha usado un tema dinámico oscuro, y se ha trabajado inyectando los Metatags en cada ruta para mejorar el SEO.
 
 [![Vue Ready](https://img.shields.io/badge/Vue.js%20v3-%20Ready-%2342b983)](https://es.vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178c6)](https://www.typescriptlang.org/)
-[![WindiCSS](https://img.shields.io/badge/Windi%20CSS-Ready-48b0f1)](https://tailwindcss.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-Ready-06b6d4)](https://tailwindcss.com/)
 [![Code Style](https://img.shields.io/badge/JS%20Style-AirBnB-ff69b4)](https://airbnb.io/javascript)
 [![Licence](https://img.shields.io/github/license/joseluisgs/photo-gallery-ionic)](./LICENSE)
-![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-poerfolio)
+![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-portfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/71670bf3-2b28-435d-a3a6-eace67e12ac1/deploy-status)](https://app.netlify.com/sites/vue-portfolio-tailwind/deploys)
 
 
 ![Portada](https://cms.croit.io/uploads/content/developer.svg)
 - [Vue-Portfolio](#vue-portfolio)
   - [Sobre el proyecto](#sobre-el-proyecto)
+    - [Tailwind CSS](#tailwind-css)
+    - [Tema oscuro](#tema-oscuro)
+    - [Iconify](#iconify)
+    - [Store](#store)
+    - [Metatag y SEO](#metatag-y-seo)
   - [Despliegue](#despliegue)
   - [Project setup](#project-setup)
     - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
@@ -26,14 +32,38 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando WindiCSS/Tail
       - [Agradecimientos](#agradecimientos)
 
 ## Sobre el proyecto
-El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando WindiCSS/Tailwind y con ello experimentar con esta librería CSS que es muy similar a Tailwind pero con algunas mejoras que me gustan.
+El objetivo de este proyecto es realizar una aplicación sencilla en Vue.js 3 para realizar un portfolio usando Tailwind CSS e Iconify.
 A lo largo del desarrollo maquetaremos nuestro portfolio, sus secciones y componentes. 
+Se ha usado un tema dinámico claro y oscuro, sin la necesidad de recargar la página.
+Se ha implementado inyección dinámica de Metatags y Título de las páginas de HTML generadas en cada ruta con el objetivo de mejorar el SEO de las mismas.
+Se han creado algunos componentes como los modales, la barra de navegación, footer orientados a adaptarse en cualquier dispositivo.
 
-Iré ampliando este Readme según vaya realizando los pasos.
+### Tailwind CSS
+[Tailwind CSS](https://tailwindcss.com/) es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con facilidad en el código HTML y unos flujos de desarrollo que permiten optimizar mucho el peso del código CSS.
+Se ha configurado el tema para adaptarlo a las necesidades de nuestro proyecto, ya sea en colores, tipografía, resoluciones o espaciado.
 
+![Portada](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png)
+
+### Tema oscuro
+Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](https://tailwindcss.com/docs/dark-mode). Además detecta automáticamente la configuración por defecto de explorador o sistema operativo para cargar el tema según corresponda.
+
+![Portada](https://i.ytimg.com/vi/o4Prej0wIZA/maxresdefault.jpg)
+
+### Iconify
+[Iconify](https://iconify.design/) nos ofrece poder usar iconos en nuestra aplicación de muchas fuentes disponibles, lo que nos ahorra cargar distintas fuentes de iconos y bajo demanda, es decir, no necesitamos cargar el pack completo si no solo se cargarán los iconos que necesitamos.
+
+![Portada](https://cdn.freebiesbug.com/wp-content/uploads/2016/12/iconify-free-icons-2.png)
+
+### Store
+Se ha manejado el almacenamiento del tema usando la Store [Pinia](https://pinia.esm.dev/). Pinia es una alternativa a Vuex, pero que nos ofrece mejor compatibilidad para TypeScript usando Vue.js 3.
+
+![Portada](https://i-cdn.embed.ly/1/display/crop?height=300&key=fd92ebbc52fc43fb98f69e50e7893c13&url=https%3A%2F%2Frepository-images.githubusercontent.com%2F222544417%2Fab2c0d09-fdb4-4fa0-b847-b6415d39322c&width=636)
+
+### Metatag y SEO
+Se ha añadido en el enrutador funciones para poder inyectar a las vistas los meta tag del HTML necesarios y con ellos mejorar el SEO.
 
 ## Despliegue
-Este proyecto esta desplegado en XXX en XXXX (Por desplegar).
+Este proyecto esta desplegado en [Netlify](https://vue-portfolio-tailwind.netlify.app/) en: [https://vue-portfolio-tailwind.netlify.app/](https://vue-portfolio-tailwind.netlify.app/).
 
 ## Project setup
 ```
