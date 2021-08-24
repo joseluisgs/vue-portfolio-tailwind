@@ -7,6 +7,7 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS,
 [![Code Style](https://img.shields.io/badge/JS%20Style-AirBnB-ff69b4)](https://airbnb.io/javascript)
 [![Licence](https://img.shields.io/github/license/joseluisgs/photo-gallery-ionic)](./LICENSE)
 ![GitHub](https://img.shields.io/github/last-commit/joseluisgs/vue-portfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/71670bf3-2b28-435d-a3a6-eace67e12ac1/deploy-status)](https://app.netlify.com/sites/vue-portfolio-tailwind/deploys)
 
 
 ![Portada](https://cms.croit.io/uploads/content/developer.svg)
@@ -62,7 +63,7 @@ Se ha manejado el almacenamiento del tema usando la Store [Pinia](https://pinia.
 Se ha añadido en el enrutador funciones para poder inyectar a las vistas los meta tag del HTML necesarios y con ellos mejorar el SEO.
 
 ## Despliegue
-Este proyecto esta desplegado en XXX en XXXX (Por desplegar).
+Este proyecto esta desplegado en [Netlify](https://vue-portfolio-tailwind.netlify.app/) en: [https://vue-portfolio-tailwind.netlify.app/](https://vue-portfolio-tailwind.netlify.app/).
 
 ## Project setup
 ```
