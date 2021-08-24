@@ -15,6 +15,7 @@ Sencilla aplicación en Vue.js 3 para realizar un portfolio usando Tailwind CSS,
     - [Tailwind CSS](#tailwind-css)
     - [Tema oscuro](#tema-oscuro)
     - [Iconify](#iconify)
+    - [Store](#store)
     - [Metatag y SEO](#metatag-y-seo)
   - [Despliegue](#despliegue)
   - [Project setup](#project-setup)
@@ -50,10 +51,15 @@ Se ha implementado el tema oscuro siguiendo la [documentación de TailwindCSS](h
 ### Iconify
 [Iconify](https://iconify.design/) nos ofrece poder usar iconos en nuestra aplicación de muchas fuentes disponibles, lo que nos ahorra cargar distintas fuentes de iconos y bajo demanda, es decir, no necesitamos cargar el pack completo si no solo se cargarán los iconos que necesitamos.
 
-### Metatag y SEO
-Se ha añadido en el enrutador funciones para poder inyectar a las vistas los meta tag de TMl necesarios y con ellos mejorar el SEO.
-
 ![Portada](https://cdn.freebiesbug.com/wp-content/uploads/2016/12/iconify-free-icons-2.png)
+
+### Store
+Se ha manejado el almacenamiento del tema usando la Store [Pinia](https://pinia.esm.dev/). Pinia es una alternativa a Vuex, pero que nos ofrece mejor compatibilidad para TypeScript usando Vue.js 3.
+
+![Portada](https://i-cdn.embed.ly/1/display/crop?height=300&key=fd92ebbc52fc43fb98f69e50e7893c13&url=https%3A%2F%2Frepository-images.githubusercontent.com%2F222544417%2Fab2c0d09-fdb4-4fa0-b847-b6415d39322c&width=636)
+
+### Metatag y SEO
+Se ha añadido en el enrutador funciones para poder inyectar a las vistas los meta tag del HTML necesarios y con ellos mejorar el SEO.
 
 ## Despliegue
 Este proyecto esta desplegado en XXX en XXXX (Por desplegar).

@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="float-right w-full mt-8 text-right sm:w-2/3 sm:mt-0">
-      <img v-if="theme === 'light'" src="@/assets/images/home/developer.svg" alt="Developer" />
+      <img v-if="themeStore.theme === 'light'" src="@/assets/images/home/developer.svg" alt="Developer" />
       <img v-else src="@/assets/images/home/developer-dark.svg" alt="Developer" />
     </div>
   </section>
@@ -52,8 +52,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onBeforeMount, ref } from 'vue';
+import { defineComponent } from 'vue';
 import { Icon } from '@iconify/vue';
+import ThemeStore from '@/store/ThemeStore';
 
 export default defineComponent({
   name: 'HomeBanner',
@@ -62,15 +63,11 @@ export default defineComponent({
     Icon,
   },
 
-  // TODO: cargar tema con store
   setup() {
-    const theme = ref('');
-    onBeforeMount(() => {
-      theme.value = localStorage.getItem('theme') || 'light';
-    });
+    const themeStore = ThemeStore();
 
     return {
-      theme,
+      themeStore,
     };
   },
 });

@@ -10,7 +10,7 @@
           <router-link :to="{ name: 'Home' }" class="flex items-center justify-between">
             <!-- Logos dependiendo del tema -->
             <img
-              v-if="theme === 'light'"
+              v-if="themeStore.theme === 'light'"
               src="../../assets/images/logo.png"
               class="w-14"
               alt="logo"
@@ -21,7 +21,7 @@
         </div>
         <!-- Solo lo mostramos en pequeñas pantallas, oculto desde sm -->
         <theme-switcher
-          :theme="theme"
+          :theme="themeStore.theme"
           @themeChanged="updateTheme"
           class="
             block
@@ -105,7 +105,7 @@
             rounded-xl
           "
         >
-          <ThemeSwitcher :theme="theme" @theme-changed="updateTheme" />
+          <ThemeSwitcher :theme="themeStore.theme" @theme-changed="updateTheme" />
         </div>
       </div>
     </div>
@@ -130,9 +130,10 @@
 <script lang="ts">
 /* eslint-disable no-use-before-define */
 
-import { defineComponent, ref, onBeforeMount } from 'vue';
+import { defineComponent, ref } from 'vue';
 import ThemeSwitcher from '@/components/utils/ThemeSwitcher.vue';
 import ModalHelp from '@/components/utils/ModalHelp.vue';
+import ThemeStore from '@/store/ThemeStore';
 
 export default defineComponent({
   name: 'Header',
@@ -144,20 +145,8 @@ export default defineComponent({
 
   setup() {
     const isOpen = ref(false);
-    const theme = ref('');
     const modal = ref(false);
-
-    onBeforeMount(() => {
-      // TODO: Hacer Con Store y detectar el cambio de tema
-      // Existe ya un tema
-      const cachedTheme = localStorage.theme ? localStorage.theme : false;
-      // tenemos un tema en el sistema operativo o explorador
-      const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (cachedTheme) updateTheme(cachedTheme);
-      else if (userPrefersDark) updateTheme('dark');
-      else updateTheme('light');
-      console.log('BeforeMount Theme', theme.value);
-    });
+    const themeStore = ThemeStore();
 
     const showModal = () => {
       if (modal.value) {
@@ -173,23 +162,13 @@ export default defineComponent({
       }
     };
 
-    // TODO: Hacer Con Store y detectar el cambio de tema
     const updateTheme = (newTheme: string) => {
-      theme.value = newTheme;
-      console.log(`theme changed to: ${newTheme}`);
-      localStorage.setItem('theme', newTheme);
-      if (theme.value === 'light') {
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        document.querySelector('html')!.classList.remove('dark');
-      } else {
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        document.querySelector('html')!.classList.add('dark');
-      }
+      themeStore.setTheme(newTheme);
     };
 
     return {
       isOpen,
-      theme,
+      themeStore,
       modal,
       showModal,
       updateTheme,

@@ -15,9 +15,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onBeforeMount } from 'vue';
 import Footer from './components/shared/Footer.vue';
 import Header from './components/shared/Header.vue';
+import ThemeStore from '@/store/ThemeStore';
 
 export default defineComponent({
   name: 'App',
@@ -25,6 +26,14 @@ export default defineComponent({
   components: {
     Footer,
     Header,
+  },
+
+  setup() {
+    // Iniciamos el tema en la store
+    const themeStore = ThemeStore();
+    onBeforeMount(() => {
+      themeStore.initTheme();
+    });
   },
 });
 </script>
